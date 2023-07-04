@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Slider</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+
+	<script src="js/lib/TweenMax.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+
+</head>
+<body>
+
+
+<div class="container" align="center">
+	
+	<h1>Creación de paginas web con este tipo de formatos y mas!</h1>
+	<hr>
+
+	<div class="slideShow">
+
+		<!--
+		<ul>
+			<li><img src="img/slide1.png"></li>
+			<li><img src="img/slide2.png"></li>
+			<li><img src="img/slide3.png"></li>
+			<li><img src="img/slide4.png"></li>
+		</ul> 
+		-->
+
+	</div>
+
+<!-- 
+	<div class="slideShowButtons">
+		<div data-idx="0" class="slideButton"></div>
+		<div data-idx="1" class="slideButton"></div>
+		<div data-idx="2" class="slideButton"></div>
+		<div data-idx="3" class="slideButton"></div>
+	</div>
+ -->	
+
+
+	<!-- <button data-mov="ant" class="btn btn-primary botSlide">Anterior</button>
+	<button data-mov="sig" class="btn btn-primary botSlide">Siguiente</button> -->
+
+	<br><br>
+
+<p>
+	En nuestra compañia le ofrecemos la mejor tecnología, y la mas adecuada al usuario
+</p>
+</div>
+
+
+
+
+
+
+
+<script src="js/slideShow.js"></script>
+
+
+<script>
+	
+	$.slideShow({
+
+		slides:['img/slide1.png','img/slide2.png','img/slide3.png','img/slide4.png'],
+		intervalo: 2000,
+		velocidad: 1200
+	});
+
+</script>
+
+
+</body>
+</html>

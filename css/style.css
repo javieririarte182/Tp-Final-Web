@@ -1,0 +1,66 @@
+.form-group{
+    position: relative;
+    top: -150px;
+}
+
+@media(max-width: 1000px){
+
+    .form-group{
+        
+        top: -50px
+    }
+}
+
+.divPreloader{
+    position: absolute;
+    opacity: 0.4;
+}
+
+.imgThumb{
+	display: block;
+	cursor: pointer;
+}
+
+
+.imgRating{
+	width: 30px;
+	height: 30px;
+}
+.slideShow{
+	/*background-color: red;*/
+	width: 600px;
+	height: 300px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.slideShow ul{
+	padding: 0;
+	list-style-type: none;
+	margin-left: 0px;
+	display: flex;
+}
+
+.slideShowButtons{
+	width: 600px;
+	display: flex;
+	position: relative;
+	margin-left: 10px;
+	top:-30px;
+}
+
+.slideShowButtons .slideButton{
+	cursor: pointer;
+	border-radius: 100%;
+	width: 15px;
+	height: 15px;
+
+	margin-right: 3px;
+
+	background-color: #a1a1a1;
+}
+
+.container{
+	background-color: beige;
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Tienda de Ropa</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	
+	<h1>Tienda de remeras: Marca: <small>Sesin</small></h1>
+	<hr>
+
+	<div class="row">
+
+		<div class="col-sm-2">
+		    <section class="panel">
+		        <div class="panel-body">
+					
+					<img data-color="blanca" src="img/camiseta/thumbs/blanca.jpg" class="imgThumb img-thumbnail">
+					<img data-color="gris" src="img/camiseta/thumbs/gris.jpg" class="imgThumb img-thumbnail">
+					<img data-color="negra" src="img/camiseta/thumbs/negra.jpg" class="imgThumb img-thumbnail">
+					<img data-color="rojo" src="img/camiseta/thumbs/rojo.jpg" class="imgThumb img-thumbnail">
+					<img data-color="rosa" src="img/camiseta/thumbs/rosa.jpg" class="imgThumb img-thumbnail">
+					<img data-color="verde" src="img/camiseta/thumbs/verde.jpg" class="imgThumb img-thumbnail">
+
+		        </div>
+		    </section>
+		</div>
+
+		<div class="col-sm-5">
+		    <section class="panel">
+		        <div class="panel-body">
+					
+					<img id="vistaPrevia" src="img/camiseta/large/blanca.jpg">
+
+		        </div>
+		    </section>
+		</div>
+
+		<div class="col-sm-4">
+		    <section class="panel">
+		        <div class="panel-body">
+					<h2>Camiseta Especial <small id="lblColor">blanca</small></h2>
+					<p>
+						Esta es una remera que a pesar de los años no se rompe, tiene una valoración muy buena
+						<br>
+						<br>
+					</p>
+					<p>
+						<h4>Rating</h4>
+						<img src="img/star1.png" class="imgRating">
+						<img src="img/star1.png" class="imgRating">
+						<img src="img/star1.png" class="imgRating">
+						<img src="img/star1.png" class="imgRating">
+						<img src="img/star2.png" class="imgRating">
+						<br>
+						<br>
+					</p>
+					<p>
+						<h3>Precio <small>$10</small></h3>
+						<a href="index-tp.html" class="btn btn-primary btn-lg active" role="button">Volver</a>
+					</p>
+
+		        </div>
+		    </section>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+
+
+<script>
+	
+(function(){
+
+	$(".imgThumb").on("mouseover",function(){
+
+		var color = $(this).data('color');
+		var url   = "img/camiseta/large/"+ color +".jpg";
+		
+		$("#vistaPrevia").attr('src', url);
+		$("#lblColor").text( color );
+	});
+
+
+
+})();
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
